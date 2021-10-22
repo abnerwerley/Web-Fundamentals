@@ -25,7 +25,7 @@ header {
   justify-content: center;
 }
 
-menu {
+#menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,9 +34,9 @@ menu {
   list-style: none;
 }
 
-menu a {
+#menu a {
   text-decoration: none;
-  color: bisque;
+  color: #7c9597;
   font-weight: 700;
   font-size: 2.5rem;
   padding: 5px 25px;
@@ -153,7 +153,8 @@ form {
   box-shadow: 5px 8px 4px #00000050;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 00.75rem;
   border-radius: 00.75rem;
   border: 1px solid #a4a4a4;
@@ -182,4 +183,87 @@ button {
 
 button:hover {
   filter: drop-shadow(5px 5px 2px #2274a590);
+}
+
+/* Mobile adaptations */
+
+@media (max-width: 600px) {
+  #menu {
+    margin: 0;
+    width: 80vw;
+  }
+
+  #menu li a {
+    padding: 5px 0;
+    font-size: 1rem;
+  }
+
+  .about {
+    flex-direction: column;
+    max-width: 80vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-img {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+  }
+
+  .about-img {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+  }
+
+  .text {
+    max-width: 80vw;
+    text-align: justify;
+  }
+
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons a {
+    margin: 150px;
+  }
+
+  iframe {
+    width: 80%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 0.725rem;
+  }
+
+  .contact {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    width: 75vw;
+  }
+
+  .map {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .map p {
+    margin: 0;
+  }
 }
