@@ -20,24 +20,24 @@
       </ul>
     </header>
 
-    <h1>Contact me:</h1>
+    <h1>Contact Me: <span class="typing"></span></h1>
 
     <section class="contact">
       <div>
         <form>
           <label for="name">Name:</label>
-          <input type="text" id="name" />
-          <div id="textName"></div>
-
+          <input type="text" id="name" onkeyup="nameValidation()"/>
+          <div id="txtName" ></div>
+          
           <label for="email">E-mail:</label>
-          <input type="email" id="email" />
+          <input type="text" id="email" onkeyup="emailValidation()" />
           <div id="txtEmail"></div>
 
           <label for="subject">Subject:</label>
-          <textarea name="subject" id="subject" cols="50" rows="10"></textarea>
+          <textarea name="subject" id="subject"  rows="3" onkeyup="subjectValidation()"></textarea>
           <div id="txtSubject"></div>
-          <br>
-          <button>Send</button>
+          
+          <button id='send' onclick="send()">Send</button>
         </form>
       </div>
       <div class="map">
@@ -52,7 +52,11 @@
           height="450"
           style="border: 0"
           allowfullscreen=""
-          loading="lazy"
+          aria-hidden="false"
+          tabindex="0"
+          id="map"
+          <!-- onmouseout="normalMap()"; -->
+          <!-- onmousemove="zoomMap()"; -->
         ></iframe>
       </div>
     </section>
