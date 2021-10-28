@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <ul id="menu">
+        <li>
+          <a href="index.html"> Home</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <h1>Contact Me: <span class="typing"></span></h1>
+
+    <section class="contact">
+      <div>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" onkeyup="nameValidation()"/>
+          <div id="txtName" ></div>
+          
+          <label for="email">E-mail:</label>
+          <input type="text" id="email" onkeyup="emailValidation()" />
+          <div id="txtEmail"></div>
+
+          <label for="subject">Subject:</label>
+          <textarea name="subject" id="subject"  rows="3" onkeyup="subjectValidation()"></textarea>
+          <div id="txtSubject"></div>
+          
+          <button id='send' onclick="send()">Send</button>
+        </form>
+      </div>
+      <div class="map">
+        <br>
+        <p>I intent to work here:</p>
+        <p>
+          Av. Nove de Julho, 3186 - Jardim Paulista, São Paulo - SP, 01406-000
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0209378386594!2d-46.6621523850705!3d-23.567691484679795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597e06e2bff3%3A0x3dbf7d7bd39681d1!2sC6%20Bank!5e0!3m2!1spt-BR!2sbr!4v1634853551137!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          id="map"
+          <!-- onmouseout="normalMap()"; -->
+          <!-- onmousemove="zoomMap()"; -->
+        ></iframe>
+      </div>
+    </section>
+
+    <footer>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/abnerwerleysilva/" target="blank">
+          <img src="assets/img/linkedin.png" alt="LinkedIn's logo" />
+        </a>
+
+        <a href="https://www.instagram.com/_abner.werley">
+          <img src="assets/img/instagram.png" alt="instagram's logo" />
+        </a>
+        
+        <p>Copyright ® by 
+          <a
+          href="https://github.com/abnerwerley"
+          target="blank" class="navHover">Abner Werley Silva
+          
+        </p>
+        
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  
+  </body>
+</html>
